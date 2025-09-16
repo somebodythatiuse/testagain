@@ -2,49 +2,6 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Olá :D</title>
-    <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #f0f0f0;
-        }
-
-        .video-container {
-            max-width: 720px;
-            margin: 20px auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>Teste</h1>
-
-    <div class="video-container">
-        <video id="video1" width="100%" height="auto" controls>
-            <!-- 👇 AQUI É O "BATATINHA": COLOQUE O LINK DO SEU VÍDEO NO src -->
-            <source src=https://n4.coomer.st/data/bc/2d/bc2d924fd0fccef7634ab5f22bacd54609a6a4a0581013b55f889f6940061ac3.mp4?f=0i58ji0davxf9vhc9l6ec_source.mp4 type="video/mp4" />
-        </video>
-    </div>
-
-    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
-    <script>
-        fluidPlayer("video1", {
-            layoutControls: {
-                primaryColor: "#00adef",
-                posterImage: "",
-                autoPlay: false,
-                mute: false
-            }
-        });
-    </script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
     <title>Meu Site de Vídeos</title>
     <link rel="stylesheet" href="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.css">
     <style>
@@ -65,8 +22,15 @@
 
     <div class="video-container">
         <video id="video1" width="100%" height="auto" controls>
-            <!-- 👇 AQUI É O "BATATINHA": COLOQUE O LINK DO SEU VÍDEO NO src -->
-            <source src=https://n4.coomer.st/data/bc/2d/bc2d924fd0fccef7634ab5f22bacd54609a6a4a0581013b55f889f6940061ac3.mp4?f=0i58ji0davxf9vhc9l6ec_source.mp4 type="video/mp4" />
+            <!-- 👇 BATATINHA 1 -->
+            <source src="https://n4.coomer.st/data/bc/2d/bc2d924fd0fccef7634ab5f22bacd54609a6a4a0581013b55f889f6940061ac3.mp4?f=0i58ji0davxf9vhc9l6ec_source.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="video-container">
+        <video id="video2" width="100%" height="auto" controls>
+            <!-- 👇 BATATINHA 2 (pode usar outro link se quiser) -->
+            <source src="https://n4.coomer.st/data/bc/2d/bc2d924fd0fccef7634ab5f22bacd54609a6a4a0581013b55f889f6940061ac3.mp4?f=0i58ji0davxf9vhc9l6ec_source.mp4" type="video/mp4" />
         </video>
     </div>
 
@@ -80,6 +44,16 @@
                 mute: false
             }
         });
+
+        fluidPlayer("video2", {
+            layoutControls: {
+                primaryColor: "#00adef",
+                posterImage: "",
+                autoPlay: false,
+                mute: false
+            }
+        });
     </script>
 </body>
 </html>
+
